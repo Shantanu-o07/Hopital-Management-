@@ -1,0 +1,38 @@
+<div class="col-md-6 offset-md-3">
+<h3>Add Patient</h3>
+<form (ngSubmit) ="onSubmit()">
+    
+    <div class="form-group">
+        <label>Patient Id</label>
+        <input type="text" class="form-control" id="patientId"
+            [(ngModel)]="patient.patientId" name="patientId">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Patient Name</label>
+        <input type="text" class="form-control" id="patientName"
+            [(ngModel)]="patient.patientName" name="patientName">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Age</label>
+        <input type="text" class="form-control" id="age"
+            [(ngModel)]="patient.age" name="age">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Dr. Name</label>
+        <input type="text" class="form-control" id="drName"
+            [(ngModel)]="patient.drName" name="drName">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Insurance Company</label>
+        <input type="text" class="form-control" id="insuranceCompany"
+            [(ngModel)]="patient.insuranceCompany" name="insuranceCompany">
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-success">Add</button>
+</form>
+
+</div>
